@@ -27,6 +27,31 @@
             padding: 20px;
         }
 
+
+        .btn-div{
+            display: flex;
+            justify-content: end;
+            
+        }
+
+        .dark-bt{   
+            position: absolute;
+            border-radius: 5px;
+            border: 2px solid black;
+           
+        }
+
+        
+
+        .main_heading{
+            font-size: 45px;
+           letter-spacing: 3px;
+         
+        }
+
+
+
+
         table{
             margin: 0;
             /* border: 1px solid black; */
@@ -259,15 +284,10 @@
 
         .name{
             text-decoration: underline;
-
+            color: blueviolet;
         }
 
-       .dark{
-            display: flex;
-            position: absolute;
-            border-radius: 5px;
-            border: 2px solid black;
-       }
+       
 
        .dark-mode{
         background-color: black;
@@ -284,12 +304,22 @@
 </head>
 <body>
     <div class="main">
-        <button class="dark" onclick="bgcolor()">Dark Mode</button>
-        <h1>Periodic Table Using HTLM and CSS</h1>
+
+        <div class="btn-div">  
+            <button class="dark-bt" onclick="bgcolor()">Dark Mode</button>
+            
+        </div>
+
+        <h1 class="main_heading">Periodic Table Using HTLM and CSS</h1>
         
+        <div class="btn-div">
+            <a style="position:absolute;" href="#identi">Colour Wise Properties</a>
+        </div>
         
+        <h2>Created By <span ><a class="name" target="_blank" href="../My mine/ashish.html"><b><i>Ashish Kuldeep</i></b></a></span></h2>
+
         
-        <h2>Created By <span class="name" ><a href="ashish.html" target="_blank">Ashish Kuldeep</a></span></h2>
+
         <br><br>
         
 
@@ -627,8 +657,9 @@
         </div>
 
 
+        
 
-        <div class="identi">
+        <div id="identi" class="identi">
 
             <table >
                 
