@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            padding: 0;margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+        .header{
+            height: 60px;
+            width: 100%;
+            
+            background-color: darkblue;
+            color: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+           
+            
+        }
+
+        .nav-left{
+           height: 100%;
+           /* border: 1px solid red; */
+           width: 20%;
+           
+
+
+        }
+        .nav-left p{
+            margin: 5px 50px;
+            font-size: 40px;
+            font-weight: 800;
+        }
+        .nav-right{
+           height: 100%;
+           /* border: 1px solid red; */
+           width: 10%;
+           
+          
+            
+        }
+
+        .nav-right button{
+            display: flex;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            border: 2px solid black;
+          
+            
+           
+        }
+        .main{
+            display: flex;
+            
+        }
+
+        .picName{
+            height: 80vh;
+            width: 45%;
+            padding: 20px;
+            /* background-color: red; */
+            
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            /* text-align: center; */
+            
+        }
+        .details{
+            height: 80vh;
+            width: 55%;
+            padding: 20px;
+            /* background-color: green; */
+            border-radius: 40px;  
+
+        }
+
+        .footer{
+            height: 30px;
+            width: 100%;
+            background-color: darkblue;
+        }
+        
+    
+
+        .pic_and_name{
+            height: 80vh;
+            background-color: black;
+            border: 5px solid black;
+            border-radius: 20px;
+            width: 55vh;
+
+            text-align: center;
+        }
+
+        .picAshish{
+            width: 100%;
+            border-radius: 30px;
+        }
+        .name{
+            margin: auto;
+            width: 100%;
+            font-size: 37px;
+            font-weight: 700;
+            text-decoration: underline;
+            color: cyan;
+        }
+       
+
+        .headingDetails{
+           
+            font-size: 30px;
+            text-decoration: underline;
+            
+        }
+
+
+        .table_margin{
+            margin: 30px 0px;
+        }
+
+        .dark-mode{
+            background: black;
+            color: white;    
+        }
+
+        
+       
+
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="nav-left">
+            <p>Home</p>
+        </div>
+         
+
+
+        <div class="nav-right">
+        
+            <button onclick="dark()">Dark Mode</button>
+            
+        </div>
+    </div>
+
+    <div class="main">
+        
+        <div class="picName">
+            <div class="pic_and_name">
+                <img class="picAshish" src="Ashish.jpg" alt="Ashis_Image">
+                <h2 class="name">Ashish Kuldeep</h2>
+            </div>
+           
+        </div>
+        
+        <div class="details">
+            <div>
+                <h2 class="headingDetails"> Details </h2>
+            </div>
+
+            <div class="detail_table">
+                <table class="table_margin">
+                    <th >Personal Data</th>
+                    <tr>
+                        <td><b>Full Name:</b></td>
+                        <td>Ashish Kuldeep</td>
+                    </tr>
+                    <tr>
+                        <td><b>Father Name:</b></td>
+                        <td>Gyan Chand</td>
+                    </tr>
+                    <tr>
+                        <td><b>Address:</b></td>
+                        <td>Gonda , Uttar Pradesh 271001</td>
+                    </tr>
+                </table>
+
+                <table class="table_margin">
+                    <th>Educational Data</th>
+                    <tr>
+                        <td><b>Education:</b></td>
+                        <td>Intermediate , Graduation(B.Sc Bio)</td>
+
+                    </tr>
+
+                    <tr>
+                        <td><b>Skills:</b></td>
+                        <td>Python , Web developer (Beginner in both)</td>
+                    </tr>
+
+                </table>
+
+                <table class="table_margin">
+                    <th>Hobbies Are</th>
+                    <tr>
+                        <td><b>Hobbies:</b></td>
+                        <td>Playing And Watching Cricket , Watching Movies</td>
+                    </tr>
+                </table>
+
+                <table class="table_margin">
+                    <tr>
+                        <td><b>Contact Email:</b></td>
+                        <td>ashishkuldeep@6gmail.com</td>
+
+                    </tr>
+                </table>
+
+                <table class="table_margin">
+                    <th>Social Media </th>
+                    <tr>
+                        <td><b>Accounts:</b></td>
+                        <td>Facebook,Instagram,Iinkdin,Tiwtter</td>
+                    </tr>
+
+                </table>
+                    
+                
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="footer">
+
+    </div>
+
+
+
+    <script>
+
+    function dark(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+
+        // button.addEventListener('click',bgcolor)
+    </script>
+</body>
+</html>
