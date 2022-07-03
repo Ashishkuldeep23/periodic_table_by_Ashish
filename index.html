@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Using HTML and CSS </title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+
+        body{
+            padding: 50px;
+        }
+
+        .main{
+            margin: 25px;
+            /* display: flex; */
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border: 3px solid black;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        table{
+            margin: 0;
+            /* border: 1px solid black; */
+            width: 55px;
+
+        }
+
+
+
+        .first{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            text-align: center;
+            margin: 20px 20px;
+           /* border: 1px solid blue; */
+            
+        }
+
+        .second{
+            /* display: flex; */
+            justify-content: center;
+            /* align-items: center; */
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 305px;
+            /* margin-right:165px ; */
+    
+
+
+
+            border: 1px solid blue;
+
+
+        }
+
+        
+
+        .row-1-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: yellow;
+        }
+
+        .row-2-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: burlywood;
+
+        }
+
+        .row-3-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+        }
+        .row-4-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+        }
+        .row-5-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+        }
+        .row-6-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+        }
+        .row-7-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+        }
+
+        .row-8-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+        }
+        .row-9-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+        }
+        .row-10-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+        }
+        .row-11-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+           
+        }
+        .row-12-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+           
+        }
+        .row-13-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+            background-color: grey;
+           
+        }
+        .row-14-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+            background-color: grey;
+           
+        }
+        .row-15-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+            background-color: grey;
+           
+        }
+        .row-16-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+            background-color: grey;
+           
+        }
+        .row-17-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: greenyellow;
+            background-color: grey;
+           
+        }
+        .row-18-style{
+            /* border: 1px solid red; */
+            height: 60px;
+            width: 100%;
+            display: flex;
+            margin: 1px 0px;
+            background-color: orangered;
+            
+           
+        }
+
+
+        .identi{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: left;
+            margin: auto;
+
+            margin-top: 80px;
+            /* border: 1px blue solid; */
+            width: 80%;
+            height: 200px;
+        }
+
+        .coloum{
+            font-size: 11px;
+           
+        }
+
+        
+        a{
+            word-wrap: break-word;
+            margin-top: 17px;
+            margin-right: 1px;
+            font-size:25px ;
+            text-decoration: none;
+        }
+
+
+        .name{
+            text-decoration: underline;
+
+        }
+
+       .dark{
+            display: flex;
+            position: absolute;
+            border-radius: 5px;
+            border: 2px solid black;
+       }
+
+       .dark-mode{
+        background-color: black;
+        color: white;
+        border: 3px solid yellow;
+        border-radius: 20px;
+       }
+
+
+      
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button class="dark" onclick="bgcolor()">Dark Mode</button>
+        <h1>Periodic Table Using HTLM and CSS</h1>
+        
+        
+        
+        <h2>Created By <span class="name" ><a href="../My mine/ashish.html">Ashish Kuldeep</a></span></h2>
+        <br><br>
+        
+
+
+        
+
+
+        <div class="first">
+
+            <div class="row1">
+                <table style="margin-top:8px;" >
+                    <tr>
+                        <td style=" height: 54px; background-color: transparent;" class="row-1-style">Group &nbsp;&nbsp;1  &nbsp;&nbsp;&nbsp;&nbsp; 1A</td>
+
+                        <td style="background-color: skyblue;" class="row-1-style">01 <a href="https://www.periodictable.one/element/1" target="_blank"><b>H</b></a> </td>
+                        <td class="row-1-style">03 <a href="https://www.periodictable.one/element/3" target="_blank"><b>Li</b></a></td>
+                        <td class="row-1-style">11<a href="https://www.periodictable.one/element/11" target="_blank"><b>Ni</b></a></td>
+                        <td class="row-1-style">19<a href="https://www.periodictable.one/element/19" target="_blank"><b>K</b></a></td>
+                        <td class="row-1-style">37<a href="https://www.periodictable.one/element/37" target="_blank"><b>Rb</b></a></td>
+                        <td class="row-1-style">55<a href="https://www.periodictable.one/element/55" target="_blank"><b>Cs</b></a></td>
+                        <td class="row-1-style">87<a href="https://www.periodictable.one/element/87" target="_blank"><b>Fr</b></a></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="row2">
+                
+                <table  style="margin-top: 88px; margin-left: 0px; ">
+                    <tr  >
+                        <td style=" height: 35px; background-color: transparent;" class="row-2-style">&nbsp;&nbsp;&nbsp;2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  2A</td>
+
+                        <td class="row-2-style">04 <a href="https://www.periodictable.one/element/4" target="_blank"><b>Be</b></a></td>
+                        <td class="row-2-style">12<a href="https://www.periodictable.one/element/12" target="_blank"><b>Mg</b></a></td>
+                        <td class="row-2-style">20<a href="https://www.periodictable.one/element/20" target="_blank"><b>Ca</b></a></td>
+                        <td class="row-2-style">38<a href="https://www.periodictable.one/element/38" target="_blank"><b>Sr</b></a></td>
+                        <td class="row-2-style">56<a href="https://www.periodictable.one/element/56" target="_blank"><b>Ba</b></a></td>
+                        <td class="row-2-style">88<a href="https://www.periodictable.one/element/88" target="_blank"><b>Ra</b></a></td>
+                      
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="row3">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-3-style" style=" height: 35px; background-color: transparent;" >&nbsp;&nbsp;3 &nbsp;&nbsp;&nbsp;&nbsp; 3B</td>
+                        <td class="row-3-style">21<a href="https://www.periodictable.one/element/21" target="_blank"><b>Sc</b></a></td>
+                        <td class="row-3-style">39<a href="https://www.periodictable.one/element/39" target="_blank"><b>Y</b></a></td>
+                        <td class="row-3-style" style=" height: 157px; background-color: transparent;"></td>
+                        <td class="row-3-style" style="background-color: wheat;"> <div class="coloum">Lanthanides</div> </td>
+                        <td class="row-3-style" style="background-color: wheat;"> <div class="coloum">Actinides</div></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="row4">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-4-style" style="background-color:transparent; height: 35px;" >&nbsp;&nbsp;4 &nbsp;&nbsp;&nbsp;&nbsp; 4B</td>
+                        <td class="row-4-style">22<a href="https://www.periodictable.one/element/22" target="_blank"><b>Ti</b></a></td>
+                        <td class="row-4-style">40<a href="https://www.periodictable.one/element/40" target="_blank"><b>Zr</b></a></td>
+                        <td class="row-4-style">72<a href="https://www.periodictable.one/element/72" target="_blank"><b>Hf</b></a></td>
+                        <td class="row-4-style">104<a href="https://www.periodictable.one/element/104" target="_blank"><b>Rf</b></a></td>
+                        <td style="background-color: transparent; height: 35px; " class="row-4-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-4-style">57<a href="https://www.periodictable.one/element/57" target="_blank"><b>La</b></a></td>
+                        <td style="background-color:crimson;" class="row-4-style">89<a href="https://www.periodictable.one/element/89" target="_blank"><b>Ac</b></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row5">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-5-style" style="background-color: transparent; height: 35px;" >&nbsp;&nbsp;5 &nbsp;&nbsp;&nbsp;&nbsp; 5B</td>
+                        <td class="row-5-style">23<a href="https://www.periodictable.one/element/23" target="_blank"><b>V</b></a></td>
+                        <td class="row-5-style">41<a href="https://www.periodictable.one/element/41" target="_blank"><b>Nb</b></a></td>
+                        <td class="row-5-style">73<a href="https://www.periodictable.one/element/73" target="_blank"><b>Ta</b></a></td>
+                        <td class="row-5-style">105<a href="https://www.periodictable.one/element/105" target="_blank"><b>Db</b></a></td>
+                        <td style="background-color: transparent; height: 35px;" class="row-5-style"></td>
+                        <td class="row-5-style" style="background-color: rgb(122, 122, 247);">58<a href="https://www.periodictable.one/element/58" target="_blank"><b></b>Ce</a></td>
+                        <td class="row-5-style" style="background-color: crimson;">90<a href="https://www.periodictable.one/element/90" target="_blank"><b>Th</b></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row6">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-6-style" style="background-color: transparent; height: 35px;" >&nbsp;&nbsp;6 &nbsp;&nbsp;&nbsp;&nbsp; 6B</td>
+                        <td class="row-6-style">24<a href="https://www.periodictable.one/element/24" target="_blank"><b>Cr</b></a></td>
+                        <td class="row-6-style">42<a href="https://www.periodictable.one/element/42" target="_blank"><b>Mo</b></a></td>
+                        <td class="row-6-style">74<a href="https://www.periodictable.one/element/74" target="_blank"><b>W</b></a></td>
+                        <td class="row-6-style">106<a href="https://www.periodictable.one/element/106" target="_blank"><b>Sg</b></a></td>
+                        <td class="row-6-style" style="background-color: transparent; height: 35px;"></td>
+                        <td class="row-6-style" style="background-color: rgb(122, 122, 247);">59<a href="https://www.periodictable.one/element/59" target="_blank"><b>Pr</b></a></td>
+                        <td class="row-6-style"style="background-color: crimson;">91<a href="https://www.periodictable.one/element/91" target="_blank"><b>Pa</b></a></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Anchor link is empty from here. -->
+
+
+
+            <div class="row7">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-7-style" style="background-color: transparent; height: 35px;" >&nbsp;&nbsp;7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7B</td>
+                        <td class="row-7-style">25<a href="https://www.periodictable.one/element/25" target="_blank"><b>Mn</b></a></td>
+                        <td class="row-7-style">43<a href="https://www.periodictable.one/element/43" target="_blank"><b>Tc</b></a></td>
+                        <td class="row-7-style">75<a href="https://www.periodictable.one/element/75" target="_blank"><b>Re</b></a></td>
+                        <td class="row-7-style">107<a href="https://www.periodictable.one/element/107" target="_blank"><b>Bh</b></a></td>
+                        <td class="row-7-style" style="background-color: transparent; height: 35px;" ></td>
+                        <td class="row-7-style"style="background-color: rgb(122, 122, 247);">60<a href="https://www.periodictable.one/element/60" target="_blank"><b>Nd</b></a></td>
+                        <td class="row-7-style"style="background-color: crimson;">92<a href="https://www.periodictable.one/element/92" target="_blank"><b>U</b></a></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="row8">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-8-style" style="background-color: transparent; height: 35px;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;</td>
+                        <td class="row-8-style">26<a href="https://www.periodictable.one/element/26" target="_blank"><b>Fe</b></a></td>
+                        <td class="row-8-style">44<a href="https://www.periodictable.one/element/44" target="_blank"><b>Ru</b></a></td>
+                        <td class="row-8-style">76<a href="https://www.periodictable.one/element/76" target="_blank"><b>Os</b></a></td>
+                        <td class="row-8-style">108<a href="https://www.periodictable.one/element/108" target="_blank"><b>Hs</b></a></td>
+                        <td class="row-8-style" style="background-color: transparent; height: 35px;"></td>
+                        <td class="row-8-style" style="background-color: rgb(122, 122, 247);">61<a href="https://www.periodictable.one/element/61" target="_blank"><b>Pm</b></a></td>
+                        <td class="row-8-style"style="background-color: crimson;">93<a href="https://www.periodictable.one/element/93" target="_blank"><b>Np</b></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row9">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-9-style" style="background-color: transparent; height: 35px;" >&nbsp;&nbsp;9 &nbsp;&nbsp;&nbsp;&nbsp; 9B</td>
+                        <td class="row-9-style">27<a href="https://www.periodictable.one/element/27" target="_blank"><b>Co</b></a></td>
+                        <td class="row-9-style">45<a href="https://www.periodictable.one/element/45" target="_blank"><b>Rh</b></a></td>
+                        <td class="row-9-style">77<a href="https://www.periodictable.one/element/77" target="_blank"><b>Ir</b></a></td>
+                        <td style="background-color: azure;" class="row-9-style">109<a href="https://www.periodictable.one/element/109" target="_blank"><b>Mt</b></a></td>
+                        <td style="background-color: transparent; height: 35px;" class="row-9-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-9-style">62<a href="https://www.periodictable.one/element/62" target="_blank"><b>Sm</b></a></td>
+                        <td style="background-color: crimson;" class="row-9-style">94<a href="https://www.periodictable.one/element/94" target="_blank"><b>Pu</b></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row10">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-10-style" style="background-color: transparent; height: 35px;" >&nbsp;&nbsp;10</td>
+                        <td class="row-10-style">28<a href="https://www.periodictable.one/element/28" target="_blank"><b>Ni</b></a></td>
+                        <td class="row-10-style">46<a href="https://www.periodictable.one/element/46" target="_blank"><b>Pd</b></a></td>
+                        <td class="row-10-style">78<a href="https://www.periodictable.one/element/78" target="_blank"><b>Pt</b></a></td>
+                        <td style="background-color: azure;" class="row-10-style">110<a href="https://www.periodictable.one/element/110" target="_blank"><b>Ds</b></a></td>
+                        <td style="background-color: transparent; height: 35px;" class="row-10-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-10-style">63<a href="https://www.periodictable.one/element/63" target="_blank"><b>Eu</b></a></td>
+                        <td style="background-color: crimson;"class="row-10-style">95<a href="https://www.periodictable.one/element/95" target="_blank"><b>Am</b></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row11">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-11-style" style="background-color: transparent; height: 35px;"  >&nbsp;&nbsp;11&nbsp;&nbsp;&nbsp;&nbsp; 1B</td>
+                        <td class="row-11-style">29<a href="https://www.periodictable.one/element/29" target="_blank"><b>Cu</b></a></td>
+                        <td class="row-11-style">47<a href="https://www.periodictable.one/element/47" target="_blank"><b>Ag</b></a></td>
+                        <td class="row-11-style">79<a href="https://www.periodictable.one/element/79" target="_blank"><b>Au</b></a></td>
+                        <td style="background-color: azure;" class="row-11-style">111<a href="https://www.periodictable.one/element/111" target="_blank"><b>Rg</b></a></td>
+                        <td style="background-color: transparent;height: 35px;" class="row-11-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-11-style">64<a href="https://www.periodictable.one/element/64" target="_blank"><b>Gd</b></a></td>
+                        <td style="background-color: crimson;" class="row-11-style">96<a href="https://www.periodictable.one/element/96" target="_blank"><b>Cm</b></a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="row12">
+                <table style="margin-top:210px ;">
+                    <tr>
+                        <td class="row-12-style" style="background-color: transparent; height: 35px;" >&nbsp;&nbsp;12&nbsp;&nbsp;&nbsp;&nbsp; 2B</td>
+                        <td class="row-12-style">30<a href="https://www.periodictable.one/element/30" target="_blank"><b>Zn</b></a></td>
+                        <td class="row-12-style">48<a href="https://www.periodictable.one/element/48" target="_blank"><b>Cd</b></a></td>
+                        <td class="row-12-style">80<a href="https://www.periodictable.one/element/80" target="_blank"><b>Hg</b></a></td>
+                        <td class="row-12-style">112<a href="https://www.periodictable.one/element/112" target="_blank"><b>Cn</b></a></td>
+                        <td class="row-12-style" style="background-color: transparent;height: 35px;"></td>
+                        <td class="row-12-style" style="background-color: rgb(122, 122, 247);">65<a href="https://www.periodictable.one/element/65" target="_blank"><b>Tb</b></a></td>
+                        <td class="row-12-style"style="background-color: crimson;">97<a href="https://www.periodictable.one/element/97" target="_blank"><b>Bk</b></a></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="row13">
+                
+                <table  style="margin-top: 86px; margin-left: 0px; ">
+                    <tr  >
+                        <td style=" height:35px; background-color: transparent;" class="row-13-style">&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;&nbsp;&nbsp; 3A</td>
+
+                        <td style="background-color: hotpink;" class="row-13-style">05<a href="https://www.periodictable.one/element/5" target="_blank"><b>B</b></a></td>
+                        <td style="background-color: lightgrey; border-top: 2px solid black ;border-right:  2px solid black; " class="row-13-style">13<a href="https://www.periodictable.one/element/13" target="_blank"><b>Al</b></a></td>
+                        <td style="background-color: lightgrey; border-right:  2px solid black;" class="row-13-style">31<a href="https://www.periodictable.one/element/31" target="_blank"><b>Ga</b></a></td>
+                        <td style="background-color: lightgrey;" class="row-13-style">49<a href="https://www.periodictable.one/element/49" target="_blank"><b>In</b></a></td>
+                        <td style="background-color: lightgrey;" class="row-13-style">81<a href="https://www.periodictable.one/element/81" target="_blank"><b>Tl</b></a></td>
+                        <td style="background-color: azure;" class="row-13-style">113<a href="https://www.periodictable.one/element/113" target="_blank"><b>Uut</b></a></td>
+                        <td style="background-color: transparent;height: 35px;" class="row-13-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-13-style">66<a href="https://www.periodictable.one/element/66" target="_blank"><b>Dy</b></a></td>
+                        <td style="background-color: crimson;" class="row-13-style">98<a href="https://www.periodictable.one/element/98" target="_blank"><b>Cf</b></a></td>
+                        
+                      
+                    </tr>
+
+                </table>
+
+            </div>
+            
+
+
+            <div class="row14">
+                
+                <table  style="margin-top: 86px; margin-left: 0px; ">
+                    <tr  >
+                        <td style=" height: 35px; background-color: transparent;" class="row-14-style">&nbsp;&nbsp;&nbsp;14&nbsp;&nbsp;&nbsp;&nbsp; 4A</td>
+
+                        <td style="background-color: skyblue;" class="row-14-style">06<a href="https://www.periodictable.one/element/6" target="_blank"><b>C</b></a></td>
+                        <td style="background-color: hotpink;" class="row-14-style">14<a href="https://www.periodictable.one/element/14" target="_blank"><b>Si</b></a></td>
+                        <td style="background-color: hotpink;" class="row-14-style">32<a href="https://www.periodictable.one/element/32" target="_blank"><b>Ge</b></a></td>
+                        <td style="background-color: lightgrey; border-top: 2px solid black ;border-right:  2px solid black;  " class="row-14-style">50<a href="https://www.periodictable.one/element/50" target="_blank"><b>Sn</b></a></td>
+                        <td style="background-color: lightgrey;" class="row-14-style">82<a href="https://www.periodictable.one/element/82" target="_blank"><b>Pb</b></a></td>
+                        <td style="background-color: azure;" class="row-14-style">114<a href="https://www.periodictable.one/element/114" target="_blank"><b>Fl</b></a></td>
+                        <td style="background-color: transparent; height: 35px;" class="row-14-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-14-style">67<a href="https://www.periodictable.one/element/67" target="_blank"><b>Ho</b></a></td>
+                        <td style="background-color: crimson;" class="row-14-style">99<a href="https://www.periodictable.one/element/99" target="_blank"><b>Es</b></a></td>
+                        
+                      
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="row15">
+                
+                <table  style="margin-top: 86px; margin-left: 0px; ">
+                    <tr  >
+                        <td style=" height: 35px; background-color: transparent;" class="row-15-style">&nbsp;&nbsp;&nbsp;&nbsp;15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5A</td>
+
+                        <td style="background-color: skyblue;" class="row-15-style">07<a href="https://www.periodictable.one/element/7" target="_blank"><b>N</b></a></td>
+                        <td style="background-color: skyblue;" class="row-15-style">15<a href="https://www.periodictable.one/element/15" target="_blank"><b>P</b></a></td>
+                        <td style="background-color: hotpink;" class="row-15-style">33<a href="https://www.periodictable.one/element/33" target="_blank"><b>As</b></a></td>
+                        <td style="background-color: hotpink;" class="row-15-style">51<a href="https://www.periodictable.one/element/51" target="_blank"><b>Sb</b></a></td>
+                        <td style="background-color: lightgrey;  border-top: 2px solid black ;border-right:  2px solid black; " class="row-15-style">83<a href="https://www.periodictable.one/element/83" target="_blank"><b>Bi</b></a></td>
+                        <td style="background-color: azure;" class="row-15-style">115<a href="https://www.periodictable.one/element/115" target="_blank"><b>Uup</b></a></td>
+                        <td style="background-color: transparent; height: 35px;" class="row-15-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-15-style">68<a href="https://www.periodictable.one/element/68" target="_blank"><b>Er</b></a></td>
+                        <td style="background-color: crimson;" class="row-15-style">100<a href="https://www.periodictable.one/element/100" target="_blank"><b>Fm</b></a></td>
+                        
+                      
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="row16">
+                
+                <table  style="margin-top: 86px; margin-left: 0px; ">
+                    <tr  >
+                        <td style=" height: 35px; background-color: transparent;" class="row-16-style">&nbsp;&nbsp;&nbsp;16&nbsp;&nbsp;&nbsp;&nbsp; 6A</td>
+
+                        <td style="background-color: skyblue;" class="row-16-style">08<a href="https://www.periodictable.one/element/8" target="_blank"><b>O</b></a></td>
+                        <td style="background-color: skyblue;" class="row-16-style">16<a href="https://www.periodictable.one/element/16" target="_blank"><b>S</b></a></td>
+                        <td style="background-color: skyblue;" class="row-16-style">34<a href="https://www.periodictable.one/element/34" target="_blank"><b>Se</b></a></td>
+                        <td style="background-color: hotpink;" class="row-15-style">52<a href="https://www.periodictable.one/element/52" target="_blank"><b>Te</b></a></td>
+                        <td style="background-color: lightgrey;" class="row-16-style">84<a href="https://www.periodictable.one/element/84" target="_blank"><b>PO</b></a></td>
+                        <td style="background-color: azure;  border-top: 2px solid black ;border-right:  2px solid black; " class="row-16-style">116<a href="https://www.periodictable.one/element/116" target="_blank"><b>Lv</b></a></td>
+                        <td style="background-color: transparent; height: 35px;" class="row-16-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-16-style">69<a href="https://www.periodictable.one/element/69" target="_blank"><b>Tm</b></a></td>
+                        <td style="background-color: crimson;" class="row-16-style">101<a href="https://www.periodictable.one/element/101" target="_blank"><b>Md</b></a></td>
+                        
+                      
+                    </tr>
+
+                </table>
+
+            </div>
+            
+            <div class="row17">
+                
+                <table  style="margin-top: 88px; margin-left: 0px; ">
+                    <tr  >
+                        <td style=" height: 35px; background-color: transparent;" class="row-17-style">&nbsp;&nbsp;&nbsp;17&nbsp;&nbsp;&nbsp;&nbsp; 7A</td>
+
+                        <td style="background-color: cyan;" class="row-17-style">09<a href="https://www.periodictable.one/element/9" target="_blank"><b>F</b></a></td>
+                        <td style="background-color: cyan;" class="row-17-style">17<a href="https://www.periodictable.one/element/17" target="_blank"><b>Cl</b></a></td>
+                        <td style="background-color: cyan;" class="row-17-style">35<a href="https://www.periodictable.one/element/35" target="_blank"><b>Br</b></a></td>
+                        <td style="background-color: cyan;" class="row-17-style">53<a href="https://www.periodictable.one/element/53" target="_blank"><b>I</b></a></td>
+                        <td style="background-color: cyan" class="row-17-style">85<a href="https://www.periodictable.one/element/85" target="_blank"><b>At</b></a></td>
+                        <td style="background-color: azure;" class="row-17-style">117<a href="https://www.periodictable.one/element/117" target="_blank"><b>Uus</b></a></td>
+                        <td style="background-color: transparent; height: 35px;" class="row-17-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-17-style">70<a href="https://www.periodictable.one/element/70" target="_blank"><b>Yb</b></a></td>
+                        <td style="background-color: crimson;" class="row-17-style">102<a href="https://www.periodictable.one/element/102" target="_blank"><b>No</b></a></td>
+                        
+                      
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="row18">
+                
+                <table style="margin-top: 27px;" >
+                    <tr  >
+                        <td style=" height:35px; background-color: transparent;" class="row-18-style">&nbsp;&nbsp;&nbsp;&nbsp;18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8A</td>
+
+                        <td  class="row-18-style">02<a href="https://www.periodictable.one/element/2" target="_blank"><b>He</b></a></td>
+                        <td  class="row-18-style">10<a href="https://www.periodictable.one/element/10" target="_blank"><b>Ne</b></a></td>
+                        <td class="row-18-style">18<a href="https://www.periodictable.one/element/18" target="_blank"><b>Ar</b></a></td>
+                        <td  class="row-18-style">36<a href="https://www.periodictable.one/element/36" target="_blank"><b>Kr</b></a></td>
+                        <td class="row-18-style">54<a href="https://www.periodictable.one/element/54" target="_blank"><b>Xe</b></a></td>
+                        <td class="row-18-style">86<a href="https://www.periodictable.one/element/86" target="_blank"><b>Rn</b></a></td>
+                        <td style="background-color: azure;" class="row-18-style">118<a href="https://www.periodictable.one/element/118" target="_blank"><b>Uuo</b></a></td>
+                        <td style="background-color: transparent; height: 35px;" class="row-18-style"></td>
+                        <td style="background-color: rgb(122, 122, 247);" class="row-18-style">71<a href="https://www.periodictable.one/element/71" target="_blank"><b>Lu</b></a></td>
+                        <td style="background-color: crimson;" class="row-18-style">103<a href="https://www.periodictable.one/element/103" target="_blank"><b>Lr</b></a></td>
+                        
+                      
+                    </tr>
+
+                </table>
+
+            </div>
+            
+            
+
+
+            <!-- First box Ends -->
+        </div>
+
+
+
+        <div class="identi">
+
+            <table >
+                
+              <tr>
+                <td style="background-color:yellow;">Yellow</td>
+                <td>:Alkalai_metals</td>
+              </tr>
+
+              <tr>
+                <td style="background-color:Burlywood;">Burlywood</td>
+                <td>:Alkaliine_earth_metals</td>
+              </tr>
+
+
+              <tr>
+                <td style="background-color: rgb(122, 122, 247);">Blue</td>
+                <td>:Lanthanides</td>
+
+              </tr>
+
+
+              <tr>
+                <td style="background-color: crimson;">Crimson</td>
+                <td>:Actinides</td>
+              </tr>
+
+              <tr>
+                <td style="background-color: greenyellow;" >Green_Yellow</td>
+
+                <td>:Transition_metals</td>
+              </tr>
+
+              <tr>
+                <td style="background-color: azure;">Azure</td>
+                <td>:Unknown_properties</td>
+              </tr>
+
+
+            </table>
+
+
+            <table style="margin-left:20px ; margin-bottom:20px;">
+                <tr>
+                    <td style="background-color: lightgrey;">Lightgrey</td>
+                    <td>:Post_transition_metals</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: hotpink;">Hotpink</td>
+                    <td>:Metalloids</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: skyblue;">Skyblue</td>
+                    <td>:Other_nonmetals</td>
+
+                </tr>
+
+                <tr>
+                    <td style="background-color:cyan;">Cyan</td>
+                    <td>:Halogens</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color:orangered ;">Orangered</td>
+                    <td>:Noble_gases</td>
+                </tr>
+
+                
+            </table>
+
+
+
+
+
+
+
+
+            <!-- Last Main div for color idenifier. -->
+        </div>
+
+        
+
+    </div>
+    
+
+
+    <script>
+        function bgcolor(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+
+        button.addEventListener('click',bgcolor)
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
